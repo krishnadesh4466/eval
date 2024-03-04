@@ -4,29 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet " href="">
+    <style>
+        .containerr {
+            display: flex;
+            align-items: center;
+            background-image: url('https://media.istockphoto.com/id/1063727164/video/multicolored-motion-gradient-background-shades-of-gray.jpg?s=640x640&k=20&c=ddlttXzOZzR92NVlL40I6Bu31FCjReuNDKAvnIZ85D4=');
+        }
+        .container {
+            align-items: center;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .nav {
+            color: aliceblue;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: red;
+            display: flex;
+            text-align: center;
+            font-size: 30px;
+        }
+        .navv {
+            background-color: black;
+            color: aliceblue;
+        }
+        .na {
+            background-color: black;
+        }
+        .imgs {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
+    <div class="na">
+        <navbar class="nav">GIFTING DEAL: shop above Rs.9999 avail 10% discount</navbar>
+        <navbar class="navv">LIPS</navbar>
+        <navbar class="navv">EYES</navbar>
+        <navbar class="navv">FACE</navbar>
+        <navbar class="navv">NAILS</navbar>
+        <navbar class="navv">SKINCARE</navbar>
+        <navbar class="navv">ACCESSORIES</navbar>
+        <navbar class="navv">GIFT KITS</navbar>
+        <navbar class="navv">NEW LAUNCHES</navbar>
+        <navbar class="navv">OFFERS</navbar>
+        <navbar class="navv">NEW BLOGS</navbar>
+    </div>
+
+    <div class="imgs">
+        <img src="https://www.milton.in/cdn/shop/files/1_211a190a-fc90-4124-9778-d16f371049c2.png?v=1702893195&width=360" alt="Product 1">
+        <img src="https://www.milton.in/cdn/shop/files/1_211a190a-fc90-4124-9778-d16f371049c2.png?v=1702893195&width=360" alt="Product 2">
+        <img src="https://www.milton.in/cdn/shop/files/1_211a190a-fc90-4124-9778-d16f371049c2.png?v=1702893195&width=360" alt="Product 3">
+        <img src="https://www.milton.in/cdn/shop/files/1_211a190a-fc90-4124-9778-d16f371049c2.png?v=1702893195&width=360" alt="Product 4">
+        <img src="https://www.milton.in/cdn/shop/files/1_211a190a-fc90-4124-9778-d16f371049c2.png?v=1702893195&width=360" alt="Product 5">
+        <img src="https://www.milton.in/cdn/shop/files/1_211a190a-fc90-4124-9778-d16f371049c2.png?v=1702893195&width=360" alt="Product 6">
+        <img src="https://www.milton.in/cdn/shop/files/1_211a190a-fc90-4124-9778-d16f371049c2.png?v=1702893195&width=360" alt="Product 7">
+        <img src="https://www.milton.in/cdn/shop/files/1_211a190a-fc90-4124-9778-d16f371049c2.png?v=1702893195&width=360" alt="Product 8">
+    </div>
+
+    <div class="containerr">
         <div class="container">
             <form>
-              <lable for="name">email</lable><br>
-                <input type="email" placeholder="EMAIL"><br>
-                <lable for="name">password:</lable><br>
-                <input type="password" placeholder="password"><br>
-                <lable for="name">message</lable><br>
-                <input type="message" placeholder="message"><br>
-                <label>website ratings</label><br>
-                <input type="radio" name="excellent"> excellent</input>
-                <input type="radio" name="excellent"> good</input>
-                <input type="radio" name="excellent"> average</input>
-                <input type="radio" name="excellent"> poor</input><br>
-                <lable for="name">age (10-100)</lable><br>
-                <input type="age" placeholder="age"><br>
-                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email"><br>
 
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Enter your password"><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Enter your message"></textarea><br>
+
+                <label for="ratings">Website Ratings:</label><br>
+                <input type="radio" id="excellent" name="ratings" value="excellent">
+                <label for="excellent">Excellent</label><br>
+
+                <input type="radio" id="good" name="ratings" value="good">
+                <label for="good">Good</label><br>
+
+                <input type="radio" id="average" name="ratings" value="average">
+                <label for="average">Average</label><br>
+
+                <input type="radio" id="poor" name="ratings" value="poor">
+                <label for="poor">Poor</label><br>
+
+                <label for="age">Age (10-100):</label><br>
+                <input type="number" id="age" name="age" min="10" max="100" placeholder="Enter your age"><br>
+
+                <label for="url">Web URL:</label><br>
+                <input type="url" id="url" name="url" placeholder="Enter website URL"><br>
+
+                <input type="checkbox" id="agree" name="agree">
+                <label for="agree">Agree to continue</label><br>
+
+                <input type="submit" value="Submit">
             </form>
-
         </div>
     </div>
 </body>
